@@ -1,2 +1,2 @@
 # landing
-Its PlayersN.com landing page
+PlayersN.com landing page (Deprecated)
