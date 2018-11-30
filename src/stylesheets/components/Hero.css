@@ -1,0 +1,30 @@
+.hero{background:url("../../images/backgrounds/header.jpg") left center no-repeat;background-attachment:fixed;background-size:cover;padding:4rem 2rem}
+@media (min-width: 768px) {
+	.hero:before {background:radial-gradient(ellipse at top,rgba(54,57,63,0),#26262b),linear-gradient(90deg,#26262b 0,rgba(54,57,63,0) 40%,rgba(54,57,63,0) 60%,#26262b),linear-gradient(0deg,#26262b 10%,rgba(54,57,63,0) 70%);    bottom: 0;
+    content: "";
+    height: 80%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;}}
+    .hero .content-wrapper.hero-wrapper{display:grid;grid-template-rows:auto auto;justify-items:center;animation: jumpTofloat 500s 1s infinite ease-in-out;}
+    .hero .content-wrapper.hero-wrapper .logo.icon{width:11.6rem;height:9.1rem;justify-self:center;margin-bottom:20px}
+    .hero .content-wrapper.hero-wrapper .logo.typeface{width:25.4rem;height:5.7rem;justify-self:center;margin-bottom:4rem}
+    .hero .content-wrapper.hero-wrapper .call-to-action{display:inline-grid;grid-template-rows:auto auto;justify-items:center}
+    .hero .content-wrapper.hero-wrapper .action-buttons{display:inline-grid;grid-template-rows:auto auto auto;grid-gap:2rem;margin-bottom:4rem;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+    .hero .content-wrapper.hero-wrapper .action-buttons .button{width:16rem}
+    @media only screen and (min-width: 768px){
+    	.hero{padding-top:12.2rem}
+    .hero .content-wrapper.hero-wrapper .logo.icon{width:18.9rem;height:14.8rem;margin-bottom:0}
+    .hero .content-wrapper.hero-wrapper .logo.typeface{width:37.9rem;height:8.5rem;margin-bottom:0;-ms-flex-item-align:center;align-self:center}
+    .hero .content-wrapper.hero-wrapper .call-to-action{grid-template-columns:auto auto}
+    .hero .content-wrapper.hero-wrapper .action-buttons{grid-template-columns:auto auto auto;grid-template-rows:auto;grid-column:1 / -1;margin-top:4.8rem;margin-bottom:5rem}
+    .hero .content-wrapper.hero-wrapper .jump-to{grid-column:1 / -1}}
+    @media only screen and (min-width: 1024px){
+    .hero .content-wrapper.hero-wrapper .logo.typeface{width:41.8rem;height:8.5rem}
+    .hero .content-wrapper.hero-wrapper .heading{font-size:36px}}
+h2{
+	font-size: 16px;font-weight: 400;line-height: 24px;margin-top: 12px;color: hsla(0,0%,100%,.6);
+}

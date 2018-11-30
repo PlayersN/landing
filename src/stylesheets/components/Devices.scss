@@ -1,0 +1,191 @@
+@import '../base/variables.scss';
+
+.devices {
+  background: url('../../images/backgrounds/devices.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 4rem 2rem;
+  overflow: hidden;
+
+  .sub-heading {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: $white;
+    margin-bottom: 4rem;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+  }
+
+  .devices-list {
+    display: inline-grid;
+    grid-template-columns: minmax(28.1rem, 46rem);
+    grid-template-rows: minmax(16.2rem, 100%) auto auto auto;
+    grid-gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    justify-content: center;
+
+    .device {
+      position: relative;
+      padding-top: 56.25%;
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      .device-badge {
+        position: absolute;
+        top: 50%;
+        margin-top: -1.5rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+    }
+
+    .laptop {
+      background: url("../../images/devices/laptop.png") center center no-repeat;
+      background-size: contain;
+      grid-row: 1;
+      animation: deviceFloat 4s 1s infinite ease-in-out;
+      animation-delay: 0s;
+
+      .device-badge {
+        left: 5%;
+        right: 5%;
+      }
+    }
+
+    .watch {
+      background: url("../../images/devices/watch.png") 50% - 7% center no-repeat;
+      background-size: contain;
+      grid-row: 4;
+      animation: deviceFloat 4s 1s infinite ease-in-out;
+      animation-delay: 2s;
+
+      .device-badge {
+        top: 40%;
+        left: 23%;
+        right: 24%;
+      }
+    }
+
+    .phone {
+      background: url("../../images/devices/phone.png") 50% - 7% center no-repeat;
+      background-size: contain;
+      grid-row: 3;
+      padding-top: 70%;
+      animation: deviceFloat 4s 1s infinite ease-in-out;
+      animation-delay: 1s;
+
+      .device-badge {
+        top: 40%;
+        left: 29%;
+        right: 29%;
+      }
+    }
+
+    .tablet {
+      background: url("../../images/devices/tablet.png") 50% - 10% center no-repeat;
+      background-size: contain;
+      padding-top: 75%;
+      grid-row: 2;
+      animation: deviceFloat 4s 1s infinite ease-in-out;
+      animation-delay: 3s;
+
+      .device-badge {
+        top: 45%;
+        left: 17%;
+        right: 19%;
+      }
+    }
+
+    @keyframes deviceFloat {
+      0% { transform: translateY(-0.5%); }
+      50% { transform: translateY(0.5%); }
+      100% { transform: translateY(-0.5%); }
+    }
+  }
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    padding: 6rem 2rem;
+
+    .content-wrapper {
+      .heading {
+        max-width: 43.5rem;
+        font-size: 4.2rem;
+      }
+
+      .sub-heading {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: #{$tablet-breakpoint + 100px}) {
+    .content-wrapper {
+      .devices-list {
+        grid-template-columns: minmax(14.6rem, 18.1rem) minmax(16.7rem, 20.7rem) minmax(28.4rem, 35.1rem);
+        grid-template-rows: 1fr 1fr;
+
+        .device {
+          background-position: top center;
+
+          .device-badge {
+            font-size: 1.6rem;
+            z-index: 999;
+          }
+        }
+
+        .laptop {
+          grid-column: 1 / -1;
+          margin-bottom: 3rem;
+
+          .device-badge {
+            right: 5%;
+            top: 11%;
+            left: unset;
+          }
+        }
+
+        .watch {
+          grid-column: 1;
+          grid-row: 2;
+          
+          .device-badge {
+            top: 24%;
+            left: 6%;
+            right: -17%;
+          }
+        }
+
+        .phone {
+          grid-column: 2;
+          grid-row: 2;
+
+          .device-badge {
+            right: -10%;
+            left: 10%;
+            top: 34%;
+          }
+        }
+
+        .tablet {
+          grid-column: 3;
+          grid-row: 2;
+
+          .device-badge {
+            left: 6%;
+            right: -6%;
+            top: 43%;
+          }
+        }
+      }
+    }
+  }
+}

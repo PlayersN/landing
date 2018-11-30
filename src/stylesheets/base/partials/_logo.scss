@@ -1,0 +1,18 @@
+.logo {
+  &.icon {
+    background: url("../../images/logo/app-icon.png") center center no-repeat;
+    background-size: contain;
+  }
+
+  &.typeface {
+    &.white {
+      background: url("../../images/logo/logo-white.svg") center center no-repeat;
+      background-size: contain;
+    }
+
+    &.purple {
+      background: url("../../images/logo/logo-purple.svg") center center no-repeat;
+      background-size: contain;
+    }
+  }
+}

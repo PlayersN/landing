@@ -1,0 +1,49 @@
+@import '../base/variables.scss';
+
+.signup-form {
+  .content-wrapper {
+    .sub-heading {
+      .logo {
+        width: 25.3rem;
+        height: 5.6rem;
+      }
+    }
+
+    .form {
+      display: inline-grid;
+      grid-template-rows: auto auto auto;
+      justify-items: center;
+      grid-gap: 3rem;
+
+      .button {
+        width: 16rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: #{$tablet-breakpoint}) {
+    .content-wrapper.signup-wrapper {
+      .heading {
+        max-width: 45.8rem;
+        font-size: 3.0rem;
+      }
+
+      .sub-heading {
+        .logo {
+          width: 36.1rem;
+          height: 8.1rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $desktop-breakpoint) {
+   .content-wrapper.signup-wrapper {
+     .form {
+       grid-template-columns: repeat(2, minmax(30rem, 34.1rem)) 16rem;
+       grid-template-rows: auto;
+       justify-items: stretch;
+     }
+   } 
+  }
+}

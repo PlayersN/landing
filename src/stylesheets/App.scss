@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px; // Set 1rem to 10px base.
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}

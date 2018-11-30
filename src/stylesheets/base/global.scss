@@ -1,0 +1,14 @@
+@import './partials/logo.scss';
+
+html {
+  box-sizing: border-box;
+  font-size: 10px; // Set 1rem to 10px base.
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: none;
+}

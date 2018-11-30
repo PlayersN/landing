@@ -1,0 +1,12 @@
+@import '../../base/variables.scss';
+
+.device-badge {
+  padding: .8rem 1.8rem;
+  background-color: $red-pink;
+  border-radius: .6rem;
+  color: $white;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  white-space: nowrap;
+}

@@ -1,0 +1,29 @@
+.devices{background:url("../../images/backgrounds/devices.jpg") center top no-repeat;background-attachment:fixed;background-size:cover;padding:4rem 2rem;overflow:hidden}
+.devices .sub-heading{font-family:'OpenSans', sans-serif;font-size:2rem;font-weight:bold;font-style:italic;color:#fff;margin-bottom:4rem}
+.devices .content-wrapper{display:grid;grid-template-rows:auto auto auto;justify-items:center}
+.devices .devices-list{display:inline-grid;grid-template-columns:minmax(28.1rem, 46rem);grid-template-rows:minmax(16.2rem, 100%) auto auto auto;grid-gap:2rem;width:100%;margin-bottom:3rem;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.devices .devices-list .device{position:relative;padding-top:56.25%;display:block;height:100%;width:100%}
+.devices .devices-list .device .device-badge{position:absolute;top:50%;margin-top:-1.5rem;left:0;right:0;text-align:center}
+.devices .devices-list .laptop{background:url("../../images/devices/laptop.png") center center no-repeat;background-size:contain;grid-row:1;-webkit-animation:deviceFloat 4s 1s infinite ease-in-out;animation:deviceFloat 4s 1s infinite ease-in-out;-webkit-animation-delay:0s;animation-delay:0s}
+.devices .devices-list .laptop .device-badge{left:5%;right:5%}
+.devices .devices-list .watch{background:url("../../images/devices/watch.png") 43% center no-repeat;background-size:contain;grid-row:4;-webkit-animation:deviceFloat 4s 1s infinite ease-in-out;animation:deviceFloat 4s 1s infinite ease-in-out;-webkit-animation-delay:2s;animation-delay:2s}
+.devices .devices-list .watch .device-badge{top:40%;left:23%;right:24%}
+.devices .devices-list .phone{background:url("../../images/devices/phone.png") 43% center no-repeat;background-size:contain;grid-row:3;padding-top:70%;-webkit-animation:deviceFloat 4s 1s infinite ease-in-out;animation:deviceFloat 4s 1s infinite ease-in-out;-webkit-animation-delay:1s;animation-delay:1s}
+.devices .devices-list .phone .device-badge{top:40%;left:29%;right:29%}
+.devices .devices-list .tablet{background:url("../../images/devices/tablet.png") 40% center no-repeat;background-size:contain;padding-top:75%;grid-row:2;-webkit-animation:deviceFloat 4s 1s infinite ease-in-out;animation:deviceFloat 4s 1s infinite ease-in-out;-webkit-animation-delay:3s;animation-delay:3s}
+.devices .devices-list .tablet .device-badge{top:45%;left:17%;right:19%}@-webkit-keyframes deviceFloat{0%{-webkit-transform:translateY(-.5%);transform:translateY(-.5%)}50%{-webkit-transform:translateY(.5%);transform:translateY(.5%)}100%{-webkit-transform:translateY(-.5%);transform:translateY(-.5%)}}@keyframes deviceFloat{0%{-webkit-transform:translateY(-.5%);transform:translateY(-.5%)}50%{-webkit-transform:translateY(.5%);transform:translateY(.5%)}100%{-webkit-transform:translateY(-.5%);transform:translateY(-.5%)}}@media only screen and (min-width: 768px){
+	.devices{padding:6rem 2rem}
+	.devices .content-wrapper .heading{max-width:43.5rem;font-size:4.2rem}
+	.devices .content-wrapper .sub-heading{margin-bottom:6rem}}@media only screen and (min-width: 868px){
+	.devices .content-wrapper .devices-list{grid-template-columns:minmax(14.6rem, 18.1rem) minmax(16.7rem, 20.7rem) minmax(28.4rem, 35.1rem);grid-template-rows:1fr 1fr}
+	.devices .content-wrapper .devices-list .device{background-position:top center}
+	.devices .content-wrapper .devices-list .device .device-badge{font-size:1.6rem;z-index:999}
+	.devices .content-wrapper .devices-list .laptop{grid-column:1 / -1;margin-bottom:3rem}
+	.devices .content-wrapper .devices-list .laptop .device-badge{right:5%;top:11%;left:unset}
+	.devices .content-wrapper .devices-list .watch{grid-column:1;grid-row:2}
+	.devices .content-wrapper .devices-list .watch .device-badge{top:24%;left:6%;right:-17%}
+	.devices .content-wrapper .devices-list .phone{grid-column:2;grid-row:2}
+	.devices .content-wrapper .devices-list .phone .device-badge{right:-10%;left:10%;top:34%}
+	.devices .content-wrapper .devices-list .tablet{grid-column:3;grid-row:2}
+	.devices .content-wrapper .devices-list .tablet .device-badge{left:6%;right:-6%;top:43%}}
+
